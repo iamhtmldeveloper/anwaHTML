@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ANWA</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+
+  <main class="custom-scroll" id="custom-scroll">
+
+    <!-- manual Navbar start -->
+     <section class="manual-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/manual.html">
+                            <span class="text">Important contacts</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M15 12h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3zm4 0h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm1 3.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM5.03 5h1.5c.07.88.22 1.75.45 2.58l-1.2 1.21c-.4-1.21-.66-2.47-.75-3.79zM19 18.97c-1.32-.09-2.6-.35-3.8-.76l1.2-1.2c.85.24 1.72.39 2.6.45v1.51z"></path></svg>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- manual Navbar ends -->
+
+
+    <!-- page title banner start -->
+     <section class="page-title-banner">
+        <picture>
+            <source media="(max-width:600px)" srcset="">
+            <source media="(max-width:991px)" srcset="">
+            <img class="title-banner-img" src="assets/images/innerpage/inner-hero.jpg" alt="">
+        </picture>
+        <div class="title-banner-caption">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="banner-title">Home Owner Manual</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+    <!-- page title banner ends -->
+
+
+    <!-- Features section start -->
+     <section class="features-filter">
+         <div class="container-fluid">
+             <div class="row align-items-center">
+                 <div class="col-md-2 p-0">
+                    <div class="features-filterTab custom-padding">
+                      <div class="accordion manualTabs" id="manualTabs">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="manualheading-1">
+                                <button class="accordion-button btn-player" data-team="dataone" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#manualtab-1" aria-expanded="true"
+                                    aria-controls="manualtab-1">
+                                    Features of the building
+                                </button>
+                            </h2>
+                            <div id="manualtab-1" class="accordion-collapse collapse"
+                                aria-labelledby="manualtabheading-1" data-bs-parent="#manualTabs">
+                                <div class="accordion-body">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link active" aria-current="page" href="javascript:void(0)" data-acc="#collapseOne">Internal</a>
+                                        <a class="nav-link" href="javascript:void(0)" data-acc="#collapseTwo">External</a>
+                                        <a class="nav-link" href="javascript:void(0)" data-acc="#collapseThree">Utilities</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="manualheading-2">
+                                <button class="accordion-button collapsed btn-player" data-team="datatwo" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#manualtab-2" aria-expanded="false"
+                                    aria-controls="manualtab-2">
+                                    Building Details
+                                </button>
+                            </h2>
+                            <div id="manualtab-2" class="accordion-collapse collapse" aria-labelledby="manualheading-2"
+                                data-bs-parent="#manualTabs">
+                                <div class="accordion-body">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link active" aria-current="page" href="javascript:void(0)" data-acc="#collapseFour">link-1 : Active</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="manualheading-3">
+                                <button class="accordion-button collapsed btn-player" data-team="datathree"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#manualtab-3"
+                                    aria-expanded="false" aria-controls="manualtab-3">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="manualtab-3" class="accordion-collapse collapse" aria-labelledby="manualheading-3"
+                                data-bs-parent="#manualTabs">
+                                <div class="accordion-body">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link active" aria-current="page" href="javascript:void(0)" data-acc="#collapseFive">link-1 : Active</a>
+                                        <a class="nav-link" href="javascript:void(0)" data-acc="#collapseSix">Link - 2</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="manualheading-4">
+                                <button class="accordion-button collapsed btn-player" data-team="datafour"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#manualtab-4"
+                                    aria-expanded="false" aria-controls="manualtab-4">
+                                    Accordion Item #4
+                                </button>
+                            </h2>
+                            <div id="manualtab-4" class="accordion-collapse collapse" aria-labelledby="manualheading-4"
+                                data-bs-parent="#manualTabs">
+                                <div class="accordion-body">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link active" aria-current="page" href="javascript:void(0)" data-acc="#collapseSeven">link-1 : Active</a>
+                                        <a class="nav-link" href="javascript:void(0)" data-acc="#collapseEight">Link - 2</a>
+                                        <a class="nav-link" href="javascript:void(0)" data-acc="#collapseNine">Link - 3</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="col-md-8">
+                  <div class="content-box">
+                    <div class="content-item player" data-players-team="dataone">
+                      <h3 class="feature-content-title">Features of the Building </h3>
+                      <picture>
+                        <source media="(max-width:600px)" srcset="">
+                        <source media="(max-width:991px)" srcset="">
+                        <img class="img-fluid" src="assets/images/innerpage/features-of-the-building.jpg" alt="">
+                      </picture>
+                        <!-- accordian start -->
+                        <div class="accordion" id="accordionExample-1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Internal <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample-1">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        External <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample-1">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Utilities <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample-1">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordian ends -->
+                    </div>
+                    <div class="content-item player" data-players-team="datatwo">
+                        <h3 class="feature-content-title">Features of the Building </h3>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="">
+                            <source media="(max-width:991px)" srcset="">
+                            <img class="img-fluid" src="assets/images/innerpage/features-of-the-building.jpg" alt="">
+                          </picture>
+                        <!-- accordian start -->
+                        <div class="accordion" id="accordionExample-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        Accordion Item #1 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample-2">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordian ends -->
+                    </div>
+                    <div class="content-item player" data-players-team="datathree">
+                        <h3 class="feature-content-title">Features of the Building </h3>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="">
+                            <source media="(max-width:991px)" srcset="">
+                            <img class="img-fluid" src="assets/images/innerpage/features-of-the-building.jpg" alt="">
+                          </picture>
+                        <!-- accordian start -->
+                        <div class="accordion" id="accordionExample-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">
+                                        Accordion Item #1 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample-3">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        Accordion Item #2 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample-3">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordian ends -->
+                    </div>
+                    <div class="content-item player" data-players-team="datafour">
+                        <h3 class="feature-content-title">Features of the Building </h3>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="">
+                            <source media="(max-width:991px)" srcset="">
+                            <img class="img-fluid" src="assets/images/innerpage/features-of-the-building.jpg" alt="">
+                          </picture>
+                        <!-- accordian start -->
+                        <div class="accordion" id="accordionExample-4">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="true"
+                                        aria-controls="collapseSeven">
+                                        Accordion Item #1 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample-4">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample-4">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                        aria-expanded="false" aria-controls="collapseNine">
+                                        Accordion Item #3 <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    aria-labelledby="headingNine" data-bs-parent="#accordionExample-4">
+                                    <div class="accordion-body">
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/acc-icon.jpg" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <p>views sea uninterrupted with apartments designed A</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordian ends -->
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="vertical-title">Features of the building</h4>
+                </div>
+             </div>
+         </div>
+     </section>
+    <!-- Feature section ends -->
+
+       <!-- Footer start -->
+       <footer>
+        <div class="footer-top">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-6">
+                       <div class="footer-logo w-100 h-100 d-flex align-items-center justify-content-start">
+                           <a href="http://" target="_blank" rel="noopener noreferrer">
+                               <img class="img-fluid" src="assets/images/omniyat_logo.png" alt="Omniyat">
+                           </a>
+                       </div>
+                   </div>
+                   <div class="col-md-3">
+                      <h4 class="footer-title">Sales Gallery</h4>
+                      <ul class="nav flex-column salesGallery">
+                        <li class="nav-item">
+                          <p class="small-lead">Omniyar sales gallery the opus by omniyat designed by zaha hadid dubai, Uae</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="small-lead">Uae : 800 666</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="small-lead">Global : <a href="tel:+97145115004">+971 4 511 5004</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="small-lead"><a href="mailto:sales@omniyat.com">sales@omniyat.com</a></p>
+                        </li>
+                    </ul>
+                   </div>
+                   <div class="col-md-3">
+                    <h4 class="footer-title">General Enquiries</h4>
+                    <p class="small-lead">Omniyat head office, 26th floor one by omniyat, Business Bay</p>
+                    <div class="social-media-icons">
+                        <h4 class="footer-title">Folloe Us</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  
+<?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/></svg>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  
+<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><path d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"/></svg>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  
+<?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"/></svg>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="separator">
+            <span></span>
+        </div>
+        <div class="footer-bottom">
+            <p class="small-lead">© <span id="year"></span> omniyat all rights reserved</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+  </main>
+
+
+   <!-- Scripts -->
+   <script src="http://code.jquery.com/jquery-1.11.1.js"></script> 
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smooth-scrollbar.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

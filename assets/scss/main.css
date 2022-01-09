@@ -1,0 +1,973 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: normal;
+}
+
+header,
+footer,
+section {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.custom-padding {
+  padding: 70px 0px;
+}
+
+.container {
+  max-width: 1460px;
+}
+
+.lead {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 38px;
+  color: #105459;
+  font-family: BrandonText-Light;
+}
+
+.small-lead {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #2c3f43;
+  text-transform: uppercase;
+  font-family: BrandonText-Regular;
+}
+
+.anwa-page-title {
+  color: #105459;
+  text-align: left;
+  font-size: 60px;
+  line-height: 72px;
+  font-family: BaskervillePT_Poster;
+  margin-bottom: 70px;
+}
+
+.vertical-title {
+  position: relative;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-align: left;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 8.7px;
+  font-weight: normal;
+  color: #2c3f43;
+  font-family: BrandonText-Regular;
+  opacity: 0.38;
+}
+
+#custom-scroll {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+[data-scrollbar] {
+  width: 100%;
+}
+
+[data-scrollbar] canvas {
+  pointer-events: none;
+}
+
+.scrollbar-thumb,
+.scrollbar-track-y {
+  width: 5px !important;
+}
+
+.scrollbar-track-y {
+  background: rgba(44, 63, 67, 0.7) !important;
+}
+
+.scrollbar-track-y .scrollbar-thumb {
+  background: #2c3f43 !important;
+}
+
+.accordion .accordion-button.collapsed::after {
+  display: none;
+}
+
+.accordion .accordion-button::after {
+  display: none;
+}
+
+.accordion .accordion-button.collapsed::before {
+  background-image: url("../images/icons/plus.png");
+}
+
+.accordion .accordion-button::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../images/icons/minus.png");
+  background-size: 10px;
+}
+
+.accordion .accordion-item,
+.accordion .accordion-button {
+  background: none !important;
+  border: 0px !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.reveal {
+  visibility: hidden;
+  position: relative;
+  /* width: 80%;
+     height: 80%;
+     max-width: 500px; */
+  overflow: hidden;
+}
+
+.reveal img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+@font-face {
+  font-family: "BaskervillePT_Poster";
+  src: url("../fonts/baskerville/BaskervillePT_Poster.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "BrandonText-Light";
+  src: url("../fonts/baskerville/BrandonText-Light.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "BrandonText-Regular";
+  src: url("../fonts/baskerville/BrandonText-Regular.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-black";
+  src: url("../fonts/brandon/brandon-grotesque-black-58a8a3e824392.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-bold-italic";
+  src: url("../fonts/brandon/brandon-grotesque-bold-italic-58a8a48221563.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-light";
+  src: url("../fonts/brandon/brandon-grotesque-light-58a8a4b38001d.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-light-italic";
+  src: url("../fonts/brandon/brandon-grotesque-light-italic-58a8a4ccb88be.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-medium-italic";
+  src: url("../fonts/brandon/brandon-grotesque-medium-italic-58a8a3c40866a.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-regular-italic";
+  src: url("../fonts/brandon/brandon-grotesque-regular-italic-58a8a456c4724.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-thin-italic";
+  src: url("../fonts/brandon/brandon-grotesque-thin-italic-58a8a3a8861fe.otf") format("woff2");
+}
+
+.anwa-banner {
+  height: calc(100vh - 70px);
+  position: relative;
+}
+
+.anwa-banner .anwa-banner-img {
+  width: 100%;
+  height: calc(100vh - 70px);
+  object-fit: cover;
+  object-position: top;
+  -o-object-fit: cover;
+  -o-object-position: top;
+}
+
+.anwa-banner .anwa-banner-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anwa-banner .anwa-banner-caption h1 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 67px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: BaskervillePT_Poster;
+  margin-bottom: 70px;
+}
+
+.anwa-banner .anwa-banner-caption h1 span {
+  display: block;
+}
+
+.anwa-banner .anwa-banner-caption a {
+  color: #ffffff;
+  text-align: left;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: BaskervillePT_Poster;
+}
+
+.anwa-banner .anwa-banner-caption h3 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 51px;
+  line-height: 62px;
+  text-transform: capitalize;
+  font-family: BaskervillePT_Poster;
+}
+
+.anwa-banner .anwa-banner-caption h3 span {
+  display: block;
+}
+
+.anwa-navOverlay {
+  height: calc(100vh - 70px);
+  background: #2c3f43;
+  display: none;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner .navOverlay-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: capitalize;
+  font-family: BaskervillePT_Poster;
+  margin-bottom: 70px;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner .anwa-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner .anwa-logo img {
+  max-width: 200px;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner .nav-links .nav-item .nav-link {
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  font-family: BrandonText-Regular;
+}
+
+.anwa-navOverlay .anwa-navOverlay-inner .nav-links .nav-item .nav-link span {
+  display: inline-block;
+  width: 20px;
+  text-align: left;
+}
+
+.home-navbar {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 1px #00000042;
+          box-shadow: 0px 0px 1px #00000042;
+}
+
+.home-navbar .left-title {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-navbar .left-title a {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px;
+  text-transform: uppercase;
+  color: #2c3f43;
+  font-family: BrandonText-Regular;
+}
+
+.home-navbar .hamburger {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-navbar .hamburger.active {
+  background: #2c3f43;
+}
+
+.home-navbar .hamburger.active span {
+  background: #ffffff;
+}
+
+.home-navbar .hamburger.active span::before {
+  width: 20px;
+  left: 5px;
+  background: #ffffff;
+}
+
+.home-navbar .hamburger.active span::after {
+  width: 30px;
+  left: 0px;
+  background: #ffffff;
+}
+
+.home-navbar .hamburger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #2c3f43;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+.home-navbar .hamburger span::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #2c3f43;
+  top: -10px;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-navbar .hamburger span::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #2c3f43;
+  top: 10px;
+  left: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-navbar .anwa-contact {
+  width: 100%;
+  position: relative;
+}
+
+.home-navbar .anwa-contact .contact-overlay {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(44, 63, 67, 0.9);
+  height: calc(100vh - 70px);
+  display: none;
+}
+
+.home-navbar .anwa-contact .contact-overlay .contact-info-scroll {
+  width: 100%;
+  height: 60vh;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #cae9f0;
+  font-family: BaskervillePT_Poster;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-inner {
+  padding: 70px 70px;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-inner .icon {
+  width: 70px;
+  height: 70px;
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-inner .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-inner .contact-info-list .nav-item {
+  margin: 15px 0px;
+}
+
+.home-navbar .anwa-contact .contact-overlay .overlay-inner .contact-info-list .nav-item span {
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  font-family: BrandonText-Regular;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle {
+  width: 100%;
+  padding: 0;
+  height: 70px;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle li {
+  display: block;
+  width: 100%;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle li a {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: BrandonText-Regular;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle li a svg {
+  margin-left: 10px;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle li a.active {
+  background: #2c3f43;
+  color: #ffffff;
+}
+
+.home-navbar .anwa-contact ul.contact-toggle li a.active svg {
+  fill: #ffffff;
+}
+
+.anwa-intro .anwa-intro-content {
+  padding: 0px 70px;
+}
+
+.anwa-omniyat .anwa-omniyat-content {
+  padding: 0px 70px;
+}
+
+.page-title-banner {
+  height: 300px;
+  position: relative;
+}
+
+.page-title-banner .title-banner-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-title-banner .title-banner-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-title-banner .title-banner-caption .banner-title {
+  color: white;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.manual-navbar {
+  width: 100%;
+  float: left;
+  clear: both;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-filter .features-filterTab {
+  width: 100%;
+  height: 100%;
+  background: #f8f9f9;
+  padding: 70px 30px;
+}
+
+.features-filter .content-box {
+  width: 100%;
+  padding: 70px 70px;
+}
+
+.features-filter .content-box .accordion {
+  margin-top: 70px;
+}
+
+.features-filter .content-box .accordion .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #105459;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.features-filter .content-box .accordion .accordion-body ul.nav {
+  padding: 0;
+  margin: 0;
+}
+
+.features-filter .content-box .accordion .accordion-body ul.nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 0px;
+}
+
+.features-filter .content-box .accordion .accordion-body ul.nav li .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.features-filter .content-box .accordion .accordion-body ul.nav li .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features-filter .content-box .accordion .accordion-body ul.nav li .text p {
+  margin-bottom: 0;
+}
+
+footer {
+  background: #e9ebec;
+}
+
+footer .footer-top {
+  padding: 70px 0px;
+}
+
+footer .footer-top .footer-title {
+  color: #2c3f43;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: BaskervillePT_Poster;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .small-lead a {
+  color: #2c3f43;
+  text-decoration: none;
+}
+
+footer .footer-top .social-media-icons {
+  margin-top: 30px;
+}
+
+footer .footer-top .social-media-icons ul li {
+  margin-right: 10px;
+}
+
+footer .footer-top .social-media-icons ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background: #2c3f43;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+footer .footer-top .social-media-icons ul li a svg {
+  width: 15px;
+  height: 15px;
+  fill: #ffffff;
+}
+
+footer .footer-top .footer-logo {
+  max-width: 300px;
+}
+
+footer .footer-top .footer-logo img {
+  width: 100%;
+}
+
+footer .separator {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+footer .separator span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #2c3f43;
+}
+
+footer .footer-bottom {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-bottom p {
+  margin: 0px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1055px;
+  }
+  .anwa-banner .anwa-banner-caption h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .anwa-banner .anwa-banner-caption h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .home-navbar .left-title a {
+    font-size: 20px;
+  }
+  .home-navbar .anwa-contact ul.contact-toggle li a {
+    font-size: 14px;
+  }
+  .anwa-page-title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  .lead {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .footer-top .footer-title {
+    font-size: 16px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .navOverlay-title,
+  .anwa-navOverlay .anwa-navOverlay-inner .anwa-logo {
+    margin-bottom: 30px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .navOverlay-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .nav-links .nav-item .nav-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contact-overlay .overlay-title {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: capitalize;
+  }
+  .home-navbar .anwa-contact .contact-overlay .overlay-inner {
+    padding: 40px 40px;
+  }
+  .home-navbar .anwa-contact .contact-overlay .overlay-inner .contact-info-list .nav-item {
+    margin: 10px 0px;
+  }
+  .home-navbar .anwa-contact .contact-overlay .overlay-inner .contact-info-list .nav-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contact-overlay .contact-info-scroll {
+    width: 100%;
+    height: 425px;
+    overflow-y: auto;
+  }
+  .contact-overlay .contact-info-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .anwa-banner .anwa-banner-caption a {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  footer .footer-logo img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .vertical-title {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .home-navbar {
+    height: auto;
+  }
+  .home-navbar .nav-trigger {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .anwa-banner .anwa-banner-caption h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .anwa-banner .anwa-banner-caption a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .anwa-banner .anwa-banner-caption h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .anwa-intro .anwa-intro-content {
+    padding: 0px 10px;
+  }
+  .vertical-title {
+    margin: 30px 10px;
+  }
+  .anwa-page-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .lead {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .anwa-omniyat {
+    padding-top: 0px;
+  }
+  .anwa-omniyat .anwa-omniyat-content {
+    padding: 0px 10px;
+  }
+  .home-navbar .left-title a {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  footer .footer-top .footer-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  footer .footer-top {
+    padding: 70px 10px;
+  }
+  .anwa-navOverlay {
+    padding: 70px 0px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner {
+    width: 100%;
+    height: calc(100vh - 210px);
+    overflow-y: auto;
+    display: block;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .anwa-logo {
+    margin-bottom: 40px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .anwa-logo img {
+    max-width: 170px;
+  }
+  .anwa-navOverlay .anwa-navOverlay-inner .navOverlay-title {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+  .home-navbar .anwa-contact {
+    width: 100%;
+    position: initial;
+  }
+  .home-navbar .anwa-contact .contact-overlay {
+    top: 0;
+    bottom: auto;
+  }
+  .home-navbar .anwa-contact .contact-overlay .contact-info-scroll {
+    height: 50vh;
+  }
+  .home-navbar .left-title {
+    border-top: 1px solid #f7f7f7;
+  }
+}
+
+@media (max-width: 414px) {
+  .anwa-banner .anwa-banner-caption h1 {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .anwa-banner .anwa-banner-caption h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .home-navbar .anwa-contact .contact-overlay .overlay-inner .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .small-lead {
+    font-size: 12px;
+  }
+  .home-navbar .anwa-contact .contact-overlay .overlay-title {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .vertical-title {
+    font-size: 14px;
+  }
+  .anwa-page-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
